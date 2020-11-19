@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Fitting Allowance Calculator</h1>
+
+<form>
+    Select the pipe material:
+    <select id="matSelect">
+      <option value="copper">Copper</option>
+      <option value="PVC">PVC</option>
+    </select>
+</form>
+
+<form>
+    Select the pipe size:
+    <select id="sizeSelect">
+      <option value="3/8">3/8</option>
+      <option value="1/2">1/2</option>
+      <option value="3/4">1/2</option>
+      <option value="1">1</option>
+      <option value="1 1/4">1 1/4</option>
+      <option value="1 1/2">1 1/2</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+</form>
+
+<form>
+    Select the pipe size:
+    <select id="angSelect">
+      <option value="90">90</option>
+      <option value="45">45</option>
+      <option value="60">60</option>
+      <option value="22 1/2">22 1/2</option>
+    </select>
+</form>
+
+<button type="button" onclick="findFittingAllowance()">Get Answer</button>
+<p id="ans">The fitting allowance is:</p>
+<p id="functAns"></p>
+
+<script>
+function findFittingAllowance() {
+    var pipeMaterial = document.getElementById("matSelect").value;
+    
+    var pipeSize = document.getElementById("sizeSelect").value;
+
+    var pipeAngle = document.getElementById("angSelect").value;
+
+    var fittingAllowance;
+
+    if (pipeMaterial == "copper")
+    {
+        if (pipeSize == "3/8")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "5/16";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "3/16";
+            } 
+        }
+        if (pipeSize == "1/2")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "3/8";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "3/16";
+            }
+        }
+        if (pipeSize == "3/4") 
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "1/2";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "1/4";
+            }
+        }
+        if (pipeSize == "1")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "3/4";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "5/16";
+            }
+        }
+        if (pipeSize == "1 1/4")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "1 1/8";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "7/16";
+            }
+            else if (pipeAngle == "60")
+            {
+                fittingAllowance = "5/8";
+            }
+            else if (pipeAngle == "22 1/2")
+            {
+                fittingAllowance = "3/16";
+            }
+        }
+        if (pipeSize == "1 1/2")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "1 5/16";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "9/16";
+            }
+            else if (pipeAngle == "60")
+            {
+                fittingAllowance = "13/16";
+            }
+            else if (pipeAngle == "22 1/2")
+            {
+                fittingAllowance = "1/4";
+            }
+        }
+        if (pipeSize == "2")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "1 7/8";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "3/4";
+            }
+            else if (pipeAngle == "60")
+            {
+                fittingAllowance = "1 1/16";
+            }
+            else if (pipeAngle == "22 1/2")
+            {
+                fittingAllowance = "5/16";
+            }
+        }
+        if (pipeSize == "3")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "2 7/8";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "1 1/8";
+            }
+            else if (pipeAngle == "60")
+            {
+                fittingAllowance = "1 5/16";
+            }
+            else if (pipeAngle == "22 1/2")
+            {
+                fittingAllowance = "1/2";
+            }
+        }
+        if (pipeSize == "4")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "3 3/4";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "1 1/2";
+            }
+            else if (pipeAngle == "60")
+            {
+                fittingAllowance = "2 3/16";
+            }
+            else if (pipeAngle == "22 1/2")
+            {
+                fittingAllowance = "11/16";
+            }
+        }
+    }
+    
+    if (pipeMaterial == "pvc")
+    {
+        if (pipeSize == "3/8")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "3/8";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "1/4";
+            }
+        }
+        if (pipeSize == "1/2")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "1/2";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "1/4";
+            }
+        }
+        if (pipeSize == "3/4")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "9/16";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "5/16";
+            }
+        }
+        if (pipeSize == "1")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "11/16";
+            }
+            else if (pipeAngle == "45")
+            {
+                 fittingAllowance = "5/16";
+            }
+        }
+        if (pipeSize == "1 1/4")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "1 9/16";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "1";
+            }
+        }
+        if (pipeSize == "1 1/2")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "1 3/4";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "1 1/8";
+            }
+            else if (pipeAngle == "60")
+            {
+                fittingAllowance = "1";
+            }
+            else if (pipeAngle == "22 1/2")
+            {
+                fittingAllowance = "1/2";
+            }
+        }
+        if (pipeSize == "2")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "2 5/16";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "1 1/2";
+            }
+            else if (pipeAngle == "60")
+            {
+                fittingAllowance = "1 5/16";
+            }
+            else if (pipeAngle == "22 1/2")
+            {
+                fittingAllowance = "11/16";
+            }
+        }
+        if (pipeSize == "3")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "3 1/16";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "1 3/4";
+            }
+            else if (pipeAngle == "60")
+            {
+                fittingAllowance = "1 11/16";
+            }
+            else if (pipeAngle == "22 1/2")
+            {
+                fittingAllowance = "13/16";
+            }
+        }
+        if (pipeSize == "4")
+        {
+            if (pipeAngle == "90")
+            {
+                fittingAllowance = "3 7/8";
+            }
+            else if (pipeAngle == "45")
+            {
+                fittingAllowance = "2 3/16";
+            }
+            else if (pipeAngle == "60")
+            {
+                fittingAllowance = "2 1/16";
+            }
+            else if (pipeAngle == "22 1/2")
+            {
+                fittingAllowance = "1"; 
+            }
+        }
+    }
+        
+    document.getElementById("functAns").innerHTML = fittingAllowance;
+}
+</script>
+
+
+
+
+
+</body>
+</html>

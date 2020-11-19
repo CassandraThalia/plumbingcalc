@@ -2,6 +2,7 @@
 
 html {
     background: rgb(47, 80, 115);
+    font-family: Arial, Helvetica, sans-serif;
 }
   
 body {
@@ -64,7 +65,6 @@ h1 {
 
 .answer {
     font-size: 1.6em;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
 }
 
@@ -76,6 +76,7 @@ h1 {
 @media only screen and (max-width: 480px) {
     html {
         background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
     }
     body{
         background-color: white;
@@ -108,7 +109,6 @@ h1 {
     }
 
     #ans {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 0.8em;
     }
 

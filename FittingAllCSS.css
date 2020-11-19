@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+html {
+    background: rgb(47, 80, 115);
+}
+  
+body {
+    box-shadow: 5px 5px 10px;
+    max-width: 700px;
+    height: 560px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.dropDown {
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.input{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:9px;
+}
+
+.sel {
+    background-color: #ffffff;
+    padding: 8px;
+    color: black;
+    font-size: 16px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+#ansButton {
+    background-color: white;
+    padding: 16px;
+    font-size: 16px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    width: 300px;
+}
+
+.answer {
+    font-size: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+#functAns{
+    font-size: 2em;
+    padding: 40px;
+}

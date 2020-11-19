@@ -68,7 +68,52 @@ h1 {
     padding: 10px;
 }
 
-#functAns{
+#functAns {
     font-size: 2em;
     padding: 40px;
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        background-color: white;
+    }
+    body{
+        background-color: white;
+        border: none;
+        box-shadow: none;
+        text-align: left;
+        margin: auto;
+    }
+
+    h1 {
+        line-height: 110%;
+    }
+
+    .dropDown {
+        font-size: 1em;
+    }
+
+    .sel {
+        font-size: 0.8em;
+    }
+
+    .input{
+        width: 300px;
+        text-align: left;
+        padding:9px;
+    }
+
+    #ansButton {
+        width: 200px;
+    }
+
+    #ans {
+        font-size: 0.8em;
+    }
+
+    #functAns {
+        font-size: 1.5em;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
 }

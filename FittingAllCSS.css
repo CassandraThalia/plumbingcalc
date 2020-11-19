@@ -106,12 +106,11 @@ h1 {
     }
 
     #ans {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     #functAns {
         font-size: 1.5em;
-        padding-top: 1px;
-        padding: 0px;
+        padding: 10px;
     }
 }

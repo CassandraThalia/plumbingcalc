@@ -108,11 +108,11 @@ h1 {
     }
 
     #ans {
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 0.8em;
     }
 
     #functAns {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 1.5em;
         padding-top: 20px;
         padding-left: 0px;

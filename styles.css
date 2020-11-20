@@ -9,7 +9,6 @@ body {
     width: 500px;
     height: 510px;
     margin-top: 50px;
-    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -44,6 +43,11 @@ button:hover {
     color: white;
 }
 
+button:focus {
+    background-color: gray;
+    color: white;
+}
+
 @media only screen and (max-width: 480px) {
     html {
         background-color: white;
@@ -53,14 +57,20 @@ button:hover {
         border: none;
         box-shadow: none;
         text-align: left;
-        margin: 30px;
+        margin: 10px;
         padding: 0px;
     }
 
     h1 {
         margin-left: 0px;
         width: 300px;
-        font-size: 2.5em;
+        font-size: 2.3em;
         line-height: 110%;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    
+    button {
+        margin-left: 0px;
     }
 }

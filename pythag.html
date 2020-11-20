@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      Fitting Allowance Calculator Program
+
+      Author: Cassandra Curtis
+      Date:   Nov 19, 2020
+
+      Filename:   pythag.html
+   -->
+
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Fitting Allowance Calculator</title>
+   <link href="reset.css" rel="stylesheet" />
+   <link href="styles.css" rel="stylesheet" />
+   <link href="pythag.css" rel="stylesheet" />
+</head>
+
+<script src="pythag.js"></script> 
+
+<h1>Pythagorean Calculator</h1>
+
+<form class="input">
+    Which side are you looking for:&nbsp;
+    <select class = "sel" id="letterSelect">
+        <option value="" disabled selected hidden>Select...</option>
+        <option value="a">a</option>
+        <option value="b">b</option>
+        <option value="c">c</option>
+    </select>
+</form>
+
+<div class = "valContainer">
+    <p id="valMessage1">Enter the value of the longest side</p>
+    <input type="number" id="side1Val" value="">
+</div>
+
+<div class = "valContainer">
+    <p id="valMessage2">Enter the value of the shortest side</p>
+    <input type="number" id="side2Val" value="">
+</div>
+
+<button id="ansButton" type="button" onclick="pythagCalc()">Calculate</button>
+
+<p id="answer"></p>
+
+

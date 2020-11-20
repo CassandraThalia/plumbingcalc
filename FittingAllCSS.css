@@ -38,6 +38,7 @@
 
     .dropDown {
         font-size: 1em;
+        margin-left: 0;
     }
 
     .sel {
@@ -57,5 +58,6 @@
         font-size: 3em;
         padding: 10px;
         margin-left: 0;
+        text-align: left;
     }
 }

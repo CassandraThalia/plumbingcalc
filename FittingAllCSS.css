@@ -1,26 +1,5 @@
 @charset "utf-8";
 
-html {
-    font-family: "Courier New", Courier, monospace;
-}
-  
-body {
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 50px;
-    color: black;
-}
-
-h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    padding: 10px;
-    margin: auto;
-    margin-bottom: 30px;
-}
-
 .dropDown {
     font-size: 1.3em;
     font-weight: bold;
@@ -63,31 +42,14 @@ h1 {
 }
 
 #functAns {
-    display: block;
     font-size: 3em;
     font-weight: bold;
     padding: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
+    text-align: center;
 }
 
 @media only screen and (max-width: 480px) {
-    html {
-        background-color: white;
-    }
-    body{
-        background-color: white;
-        border: none;
-        box-shadow: none;
-        text-align: left;
-        margin: auto;
-    }
-
-    h1 {
-        line-height: 110%;
-    }
-
+    
     .dropDown {
         font-size: 1em;
     }

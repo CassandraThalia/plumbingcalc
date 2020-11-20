@@ -23,7 +23,7 @@
 
 <div class = "dropDown">
     <form class="input">
-        Pipe Material:
+        Pipe Material:&nbsp;
         <select class = "sel" id="matSelect">
         <option value="" disabled selected hidden>Select...</option>
         <option value="copper">Copper</option>
@@ -32,7 +32,7 @@
     </form>
 
     <form class="input">
-        Pipe Size:
+        Pipe Size:&nbsp;
         <select class = "sel" id="sizeSelect">
         <option value="" disabled selected hidden>Select...</option>
         <option value="3/8">3/8</option>
@@ -48,7 +48,7 @@
     </form>
 
     <form class="input">
-        Pipe Angle:
+        Pipe Angle:&nbsp;
         <select class = "sel"  id="angSelect">
         <option value="" disabled selected hidden>Select...</option>
         <option value="90">90<span>&#176;</span></option>
@@ -59,9 +59,8 @@
     </form>
 </div>
 
-<button id="ansButton" type="button" onclick="findFittingAllowance()">Get Answer</button>
+<button id="ansButton" type="button" onclick="findFittingAllowance()">Calculate Fitting Allowance</button>
 
-<p id="ans">The fitting allowance is:</p>
 <p id="functAns"></p>
 
 <script src="FittingAllJava.js"></script> 

@@ -25,7 +25,14 @@ h1 {
     margin-bottom: 30px;
 }
 
+ul li {
+    border-style: solid;
+    border-color: black;
+}
 
+a {
+    text-decoration: none;
+}
 
 @media only screen and (max-width: 480px) {
     html {

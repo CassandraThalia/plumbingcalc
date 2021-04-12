@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      Fitting Allowance Calculator Program
+
+      Author: Cassandra Curtis
+      Date:   Nov 19, 2020
+
+      Filename:   index.html
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Water Pipe Sizing Calculator</title>
+   <link href="reset.css" rel="stylesheet" />
+   <link href="styles.css" rel="stylesheet" />
+   <link href="FittingAllCSS.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<h1>Water Pipe Sizing - Table 2.6.3.4</h1>
+
+<div>
+<form class="input">
+    Water Velocity (m/s):&nbsp;
+    <input class="sel" id="waterVel" type="text" />
+</form>
+
+<form class="input">
+    Hydraulic Load (fluid units):&nbsp;
+    <input class="sel" id="hydrLoad" type="text" />
+</form>
+</div>
+
+<button id="ansButton" type="button" onclick="calculate()">Calculate Pipe Size</button>
+
+<p id="functAns"></p>
+
+<script src="WaterPipeSizing.js"></script> 
+
+</body>
+
+</html>
